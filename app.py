@@ -4,8 +4,8 @@ import requests
 app = Flask(__name__)
 
 # Your API keys
-SPOONACULAR_API_KEY = '6fabcaf2466649f0b18a1853641cd886'
-YOUTUBE_API_KEY = 'AIzaSyDUbh1sCBM6sZCIY0IV7dnpvFP-xbLf1vo'
+SPOONACULAR_API_KEY = 'Your-Api'
+YOUTUBE_API_KEY = 'YOUTUBE-API'
 
 # Fetch dishes from Spoonacular
 def fetch_dishes(dish, page):
@@ -14,13 +14,13 @@ def fetch_dishes(dish, page):
     response = requests.get(url)
     return response.json()
 
-# Fetch dish details from Spoonacular
+
 def fetch_dish_ingredients(dish_id):
     url = f'https://api.spoonacular.com/recipes/{dish_id}/information?apiKey={SPOONACULAR_API_KEY}'
     response = requests.get(url)
     return response.json()
 
-# Fetch YouTube video related to the dish
+
 def fetch_youtube_video(dish_name):
     url = f'https://www.googleapis.com/youtube/v3/search?part=snippet&q={dish_name} recipe&key={YOUTUBE_API_KEY}'
     response = requests.get(url)
