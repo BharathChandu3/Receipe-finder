@@ -17,7 +17,7 @@ let totalDishResults = 0;
 async function fetchDishes(dish, page) {
     const response = await fetch(`/search?dish=${dish}&page=${page}`);
     const data = await response.json();
-    totalDishResults = data.totalResults;  // Get total number of results for pagination
+    totalDishResults = data.totalResults;  
     return data.results;
 }
 
