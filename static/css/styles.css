@@ -1,11 +1,10 @@
-/* Reset all elements */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Body styling */
+
 body {
     font-family: Arial, sans-serif;
     background-image: url('back.gif');
@@ -14,27 +13,27 @@ body {
     padding: 20px;
 }
 
-/* Main container styling */
+
 .container {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-/* Heading styling */
+
 h1 {
     color: #333;
     margin-bottom: 20px;
 }
 
-/* Form styling */
+
 form {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-/* Input styling */
+
 input[type="text"] {
     padding: 10px;
     width: 300px;
@@ -43,7 +42,7 @@ input[type="text"] {
     margin-right: 10px;
 }
 
-/* Button styling */
+
 button {
     padding: 10px;
     background-color: #28a745;
@@ -54,12 +53,12 @@ button {
     transition: background-color 0.3s ease;
 }
 
-/* Disabled button */
+
 button:disabled {
     background-color: #ccc;
 }
 
-/* Dish container grid */
+
 #dishContainer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -68,7 +67,7 @@ button:disabled {
     padding: 10px;
 }
 
-/* Dish card styling */
+
 .dish-card {
     background-color: white;
     border-radius: 8px;
@@ -80,12 +79,12 @@ button:disabled {
     margin-bottom: 20px;
 }
 
-/* Hover effect on the dish card */
+
 .dish-card:hover {
     transform: translateY(-10px);
 }
 
-/* Dish card image styling */
+
 .dish-card img {
     width: 100%;
     height: 150px;
@@ -94,13 +93,13 @@ button:disabled {
     margin-bottom: 10px;
 }
 
-/* Dish card title styling */
+
 .dish-card h3 {
     color: #333;
     margin-bottom: 10px;
 }
 
-/* View Ingredients button styling */
+
 .view-ingredients-btn {
     padding: 10px;
     background-color: #3498db;
@@ -113,19 +112,19 @@ button:disabled {
     width: 100%;
 }
 
-/* Hover effect for the View Ingredients button */
+
 .view-ingredients-btn:hover {
     background-color: #2980b9;
 }
 
-/* Pagination button container */
+
 #paginationDish {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-/* Pagination buttons */
+
 #paginationDish button {
     margin: 0 10px;
     padding: 10px 20px;
@@ -137,25 +136,23 @@ button:disabled {
     transition: background-color 0.3s ease;
 }
 
-/* Pagination button hover effect */
 #paginationDish button:hover {
     background-color: #2980b9;
 }
 
-/* Modal styling */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 999; /* Sit on top */
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.8); 
     justify-content: center;
     align-items: center;
-    overflow: auto; /* Enable scroll if needed */
-    display: flex; /* Flex to center content */
+    overflow: auto; 
+    display: flex; 
 }
 
 .modal-content {
@@ -163,14 +160,13 @@ button:disabled {
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
-    width: 90%; /* Responsive width */
+    width: 90%; 
     margin: auto;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
     animation: fadeIn 0.5s ease;
 }
 
-/* Center the content within the modal */
 .modal-content img,
 .modal-content h3,
 .modal-content iframe {
@@ -191,7 +187,6 @@ button:disabled {
     cursor: pointer;
 }
 
-/* Modal fade-in animation */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -233,7 +228,6 @@ iframe {
     border-radius: 10px;
 }
 
-/* Pagination Buttons */
 #prevDishPage, #nextDishPage {
     background-color: #007bff;
     color: white;
@@ -248,7 +242,6 @@ iframe {
     background-color: #0056b3;
 }
 
-/* Additional Modal Styling */
 #dishImage {
     max-width: 200px;
     margin: 10px auto;
